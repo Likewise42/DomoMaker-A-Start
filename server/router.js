@@ -1,7 +1,7 @@
 const controllers = require('./controllers');
 
 const router = (app) => {
-  app.get('/login', controllers.Account.logingPage);
+  app.get('/login', controllers.Account.loginPage);
   app.post('/login', controllers.Account.login);
   app.get('/signup', controllers.Account.signupPage);
   app.post('/signup', controllers.Account.signup);
